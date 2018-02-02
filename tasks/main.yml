@@ -4,5 +4,5 @@
 - include_tasks: debian.yml
   when: ansible_distribution in ('Debian', 'Ubuntu')
 
-- include: redhat.yml
+- include_tasks: redhat.yml
   when: ansible_distribution in ('Red Hat Enterprise Linux', 'CentOS', 'Fedora')
