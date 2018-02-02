@@ -1,0 +1,15 @@
+---
+- name: Install Google Chrome (RedHat)
+  block:
+    - name: Ensure Google Chrome repo is present
+      copy: 
+        src: google-chrome.repo
+        dest: /etc/yum.repos.d/
+        owner: root 
+        group: root 
+        mode: 0644
+    - name: Install Google Chrome
+      dnf: 
+        name: "{{ chrome_package }}"
+  become: True
+
