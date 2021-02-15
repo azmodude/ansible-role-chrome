@@ -11,7 +11,7 @@
       zypper_repository:
         name: google-chrome 
         repo: 'http://dl.google.com/linux/chrome/rpm/stable/x86_64'
-        filename: "google-chrome"
+        name: "google-chrome"
         state: present
         runrefresh: yes
     
