@@ -8,4 +8,4 @@
   when: ansible_distribution in ('Red Hat Enterprise Linux', 'CentOS', 'Fedora')
 
 - include_tasks: opensuse.yml
-  when: "openSUSE" in ansible_distribution
+  when: '"openSUSE" in ansible_distribution'
