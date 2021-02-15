@@ -13,7 +13,7 @@
         repo: 'http://dl.google.com/linux/chrome/rpm/stable/x86_64'
         filename: "google-chrome"
         state: present
-        run_refresh: yes
+        runrefresh: yes
     
     - name: Install Google Chrome
       zypper:
