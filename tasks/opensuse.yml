@@ -3,7 +3,7 @@
   block:
     - name: Ensure Google Linux Signing Key is present
       rpm_key: 
-        url: https://dl-ssl.google.com/linux/linux_signing_key.pub 
+        key: https://dl-ssl.google.com/linux/linux_signing_key.pub 
         fingerprint: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
         state: present
     
