@@ -6,3 +6,6 @@
 
 - include_tasks: redhat.yml
   when: ansible_distribution in ('Red Hat Enterprise Linux', 'CentOS', 'Fedora')
+
+- include_tasks: opensuse.yml
+  when: "openSUSE" in ansible_distribution
